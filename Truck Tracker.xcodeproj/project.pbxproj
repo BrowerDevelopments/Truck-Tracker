@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F2CF183B21956915008BD21F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CF183A21956915008BD21F /* AppDelegate.swift */; };
+		F2CF183D21956915008BD21F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CF183C21956915008BD21F /* ViewController.swift */; };
+		F2CF184021956915008BD21F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2CF183E21956915008BD21F /* Main.storyboard */; };
+		F2CF184221956917008BD21F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2CF184121956917008BD21F /* Assets.xcassets */; };
+		F2CF184521956917008BD21F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2CF184321956917008BD21F /* LaunchScreen.storyboard */; };
+		F2CF185021956917008BD21F /* Truck_TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CF184F21956917008BD21F /* Truck_TrackerTests.swift */; };
+		F2CF185B21956917008BD21F /* Truck_TrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CF185A21956917008BD21F /* Truck_TrackerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F2CF184C21956917008BD21F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2CF182F21956915008BD21F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2CF183621956915008BD21F;
+			remoteInfo = "Truck Tracker";
+		};
+		F2CF185721956917008BD21F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2CF182F21956915008BD21F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2CF183621956915008BD21F;
+			remoteInfo = "Truck Tracker";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F2CF183721956915008BD21F /* Truck Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Truck Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2CF183A21956915008BD21F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F2CF183C21956915008BD21F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F2CF183F21956915008BD21F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F2CF184121956917008BD21F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F2CF184421956917008BD21F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F2CF184621956917008BD21F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2CF184B21956917008BD21F /* Truck TrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Truck TrackerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2CF184F21956917008BD21F /* Truck_TrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Truck_TrackerTests.swift; sourceTree = "<group>"; };
+		F2CF185121956917008BD21F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2CF185621956917008BD21F /* Truck TrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Truck TrackerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2CF185A21956917008BD21F /* Truck_TrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Truck_TrackerUITests.swift; sourceTree = "<group>"; };
+		F2CF185C21956917008BD21F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F2CF183421956915008BD21F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2CF184821956917008BD21F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2CF185321956917008BD21F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F2CF182E21956915008BD21F = {
+			isa = PBXGroup;
+			children = (
+				F2CF183921956915008BD21F /* Truck Tracker */,
+				F2CF184E21956917008BD21F /* Truck TrackerTests */,
+				F2CF185921956917008BD21F /* Truck TrackerUITests */,
+				F2CF183821956915008BD21F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F2CF183821956915008BD21F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F2CF183721956915008BD21F /* Truck Tracker.app */,
+				F2CF184B21956917008BD21F /* Truck TrackerTests.xctest */,
+				F2CF185621956917008BD21F /* Truck TrackerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F2CF183921956915008BD21F /* Truck Tracker */ = {
+			isa = PBXGroup;
+			children = (
+				F2CF183A21956915008BD21F /* AppDelegate.swift */,
+				F2CF183C21956915008BD21F /* ViewController.swift */,
+				F2CF183E21956915008BD21F /* Main.storyboard */,
+				F2CF184121956917008BD21F /* Assets.xcassets */,
+				F2CF184321956917008BD21F /* LaunchScreen.storyboard */,
+				F2CF184621956917008BD21F /* Info.plist */,
+			);
+			path = "Truck Tracker";
+			sourceTree = "<group>";
+		};
+		F2CF184E21956917008BD21F /* Truck TrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				F2CF184F21956917008BD21F /* Truck_TrackerTests.swift */,
+				F2CF185121956917008BD21F /* Info.plist */,
+			);
+			path = "Truck TrackerTests";
+			sourceTree = "<group>";
+		};
+		F2CF185921956917008BD21F /* Truck TrackerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F2CF185A21956917008BD21F /* Truck_TrackerUITests.swift */,
+				F2CF185C21956917008BD21F /* Info.plist */,
+			);
+			path = "Truck TrackerUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F2CF183621956915008BD21F /* Truck Tracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2CF185F21956917008BD21F /* Build configuration list for PBXNativeTarget "Truck Tracker" */;
+			buildPhases = (
+				F2CF183321956915008BD21F /* Sources */,
+				F2CF183421956915008BD21F /* Frameworks */,
+				F2CF183521956915008BD21F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Truck Tracker";
+			productName = "Truck Tracker";
+			productReference = F2CF183721956915008BD21F /* Truck Tracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F2CF184A21956917008BD21F /* Truck TrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2CF186221956917008BD21F /* Build configuration list for PBXNativeTarget "Truck TrackerTests" */;
+			buildPhases = (
+				F2CF184721956917008BD21F /* Sources */,
+				F2CF184821956917008BD21F /* Frameworks */,
+				F2CF184921956917008BD21F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F2CF184D21956917008BD21F /* PBXTargetDependency */,
+			);
+			name = "Truck TrackerTests";
+			productName = "Truck TrackerTests";
+			productReference = F2CF184B21956917008BD21F /* Truck TrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F2CF185521956917008BD21F /* Truck TrackerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2CF186521956917008BD21F /* Build configuration list for PBXNativeTarget "Truck TrackerUITests" */;
+			buildPhases = (
+				F2CF185221956917008BD21F /* Sources */,
+				F2CF185321956917008BD21F /* Frameworks */,
+				F2CF185421956917008BD21F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F2CF185821956917008BD21F /* PBXTargetDependency */,
+			);
+			name = "Truck TrackerUITests";
+			productName = "Truck TrackerUITests";
+			productReference = F2CF185621956917008BD21F /* Truck TrackerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F2CF182F21956915008BD21F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Dorm Creation";
+				TargetAttributes = {
+					F2CF183621956915008BD21F = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					F2CF184A21956917008BD21F = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = F2CF183621956915008BD21F;
+					};
+					F2CF185521956917008BD21F = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = F2CF183621956915008BD21F;
+					};
+				};
+			};
+			buildConfigurationList = F2CF183221956915008BD21F /* Build configuration list for PBXProject "Truck Tracker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F2CF182E21956915008BD21F;
+			productRefGroup = F2CF183821956915008BD21F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F2CF183621956915008BD21F /* Truck Tracker */,
+				F2CF184A21956917008BD21F /* Truck TrackerTests */,
+				F2CF185521956917008BD21F /* Truck TrackerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F2CF183521956915008BD21F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2CF184521956917008BD21F /* LaunchScreen.storyboard in Resources */,
+				F2CF184221956917008BD21F /* Assets.xcassets in Resources */,
+				F2CF184021956915008BD21F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2CF184921956917008BD21F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2CF185421956917008BD21F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F2CF183321956915008BD21F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2CF183D21956915008BD21F /* ViewController.swift in Sources */,
+				F2CF183B21956915008BD21F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2CF184721956917008BD21F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2CF185021956917008BD21F /* Truck_TrackerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2CF185221956917008BD21F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2CF185B21956917008BD21F /* Truck_TrackerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F2CF184D21956917008BD21F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2CF183621956915008BD21F /* Truck Tracker */;
+			targetProxy = F2CF184C21956917008BD21F /* PBXContainerItemProxy */;
+		};
+		F2CF185821956917008BD21F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2CF183621956915008BD21F /* Truck Tracker */;
+			targetProxy = F2CF185721956917008BD21F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F2CF183E21956915008BD21F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2CF183F21956915008BD21F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F2CF184321956917008BD21F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2CF184421956917008BD21F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F2CF185D21956917008BD21F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F2CF185E21956917008BD21F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F2CF186021956917008BD21F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 63262ZYTH8;
+				INFOPLIST_FILE = "Truck Tracker/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dormcreation.Truck-Tracker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F2CF186121956917008BD21F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 63262ZYTH8;
+				INFOPLIST_FILE = "Truck Tracker/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dormcreation.Truck-Tracker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F2CF186321956917008BD21F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 63262ZYTH8;
+				INFOPLIST_FILE = "Truck TrackerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dormcreation.Truck-TrackerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Truck Tracker.app/Truck Tracker";
+			};
+			name = Debug;
+		};
+		F2CF186421956917008BD21F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 63262ZYTH8;
+				INFOPLIST_FILE = "Truck TrackerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dormcreation.Truck-TrackerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Truck Tracker.app/Truck Tracker";
+			};
+			name = Release;
+		};
+		F2CF186621956917008BD21F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 63262ZYTH8;
+				INFOPLIST_FILE = "Truck TrackerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dormcreation.Truck-TrackerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Truck Tracker";
+			};
+			name = Debug;
+		};
+		F2CF186721956917008BD21F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 63262ZYTH8;
+				INFOPLIST_FILE = "Truck TrackerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dormcreation.Truck-TrackerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Truck Tracker";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F2CF183221956915008BD21F /* Build configuration list for PBXProject "Truck Tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2CF185D21956917008BD21F /* Debug */,
+				F2CF185E21956917008BD21F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2CF185F21956917008BD21F /* Build configuration list for PBXNativeTarget "Truck Tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2CF186021956917008BD21F /* Debug */,
+				F2CF186121956917008BD21F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2CF186221956917008BD21F /* Build configuration list for PBXNativeTarget "Truck TrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2CF186321956917008BD21F /* Debug */,
+				F2CF186421956917008BD21F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2CF186521956917008BD21F /* Build configuration list for PBXNativeTarget "Truck TrackerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2CF186621956917008BD21F /* Debug */,
+				F2CF186721956917008BD21F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F2CF182F21956915008BD21F /* Project object */;
+}
