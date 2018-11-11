@@ -39,6 +39,15 @@ class ViewController: UIViewController, MKMapViewDelegate {
         self.mapView.delegate = self
     }
     
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        guard !(annotation is MKUserLocation) else { return nil }
+        
+        let annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: "customannotation")
+        annotationView.image = UIImage(named: "Pin -cheap")
+        annotationView.canShowCallout = true
+        return annotationView
+    }
+    
     func focusMapOnUserLocation(){
         /* Zooms the map in around the location  */
         if let location = locationManager.location?.coordinate {
@@ -78,7 +87,7 @@ class ViewController: UIViewController, MKMapViewDelegate {
             /* set up all the map stuff */
             mapView.showsUserLocation = true
             focusMapOnUserLocation()
-            locationManager.startUpdatingLocation()
+//            locationManager.startUpdatingLocation()
             break
         case .denied:
             /* user does not want their location to be known :(
