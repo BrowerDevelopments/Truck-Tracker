@@ -15,9 +15,9 @@ class customPin: NSObject, MKAnnotation {
     var title: String?
     var subtitle: String?
     
-    init(titlePin: String, pricePin: String, coordinatePin: CLLocationCoordinate2D){
+    init(titlePin: String, subtitlePin: String, coordinatePin: CLLocationCoordinate2D){
         self.title = titlePin
-        self.subtitle = pricePin
+        self.subtitle = subtitlePin
         self.coordinate = coordinatePin
     }
 }
@@ -33,8 +33,8 @@ class ViewController: UIViewController, MKMapViewDelegate {
         checkLocationServices()
         mapView.showsCompass = true
         
-        let foodTruckLocation = CLLocationCoordinate2D(latitude: 37, longitude: -112)
-        let foodTruckPin = customPin(titlePin: "In Queso Emergency", pricePin: "A cheesy delight.", coordinatePin: foodTruckLocation)
+        let foodTruckLocation = CLLocationCoordinate2D(latitude: 37.806433301430566, longitude: -122.43752356890508)
+        let foodTruckPin = customPin(titlePin: "In Queso Emergency", subtitlePin: "A cheesy delight.", coordinatePin: foodTruckLocation)
         self.mapView.addAnnotation(foodTruckPin)
         self.mapView.delegate = self
     }
@@ -46,6 +46,20 @@ class ViewController: UIViewController, MKMapViewDelegate {
         annotationView.image = UIImage(named: "Pin -cheap")
         annotationView.canShowCallout = true
         return annotationView
+    }
+    
+    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+        if let pinLocation = view.annotation?.coordinate {
+            focusMapOnPin(coord: pinLocation)
+        }
+    }
+    
+    func focusMapOnPin( coord: CLLocationCoordinate2D ) {
+        /* When the user touches a pin the map focuses on their location
+         latitude: latidue of the pin
+         longitude: longitude of the pin */
+        let region = MKCoordinateRegion.init(center: coord, latitudinalMeters: regionInMeters, longitudinalMeters: regionInMeters)
+        mapView.setRegion(region, animated: true)
     }
     
     func focusMapOnUserLocation(){
