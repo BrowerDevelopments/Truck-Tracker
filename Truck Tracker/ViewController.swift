@@ -33,9 +33,14 @@ class ViewController: UIViewController, MKMapViewDelegate {
         checkLocationServices()
         mapView.showsCompass = true
         
-        let foodTruckLocation = CLLocationCoordinate2D(latitude: 37.806433301430566, longitude: -122.43752356890508)
+        let foodTruckLocation = CLLocationCoordinate2D(latitude: 43.09306637904841, longitude: -77.65192094989914)
         let foodTruckPin = customPin(titlePin: "In Queso Emergency", subtitlePin: "A cheesy delight.", coordinatePin: foodTruckLocation)
         self.mapView.addAnnotation(foodTruckPin)
+        self.mapView.delegate = self
+        
+        let foodTruckLocation2 = CLLocationCoordinate2D(latitude: 37.80128588094106, longitude: -122.42472711750167)
+        let foodTruckPin2 = customPin(titlePin: "You Need Cheesus", subtitlePin: "A religous experience.", coordinatePin: foodTruckLocation2)
+        self.mapView.addAnnotation(foodTruckPin2)
         self.mapView.delegate = self
     }
     
@@ -49,16 +54,21 @@ class ViewController: UIViewController, MKMapViewDelegate {
     }
     
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
-        if let pinLocation = view.annotation?.coordinate {
-            focusMapOnPin(coord: pinLocation)
+        let pinLocation = view.annotation?.coordinate
+        let userLocation = locationManager.location?.coordinate
+        if pinLocation?.longitude == userLocation?.longitude && pinLocation?.latitude == userLocation?.latitude {
+            let zoomLocation = view.annotation?.coordinate
+            focusMapOnUserLocation()
+        } else if let pinLocation = view.annotation?.coordinate {
+            focusMapOnPin(coord: pinLocation, regionMeters: regionInMeters / 2)
         }
     }
     
-    func focusMapOnPin( coord: CLLocationCoordinate2D ) {
+    func focusMapOnPin( coord: CLLocationCoordinate2D, regionMeters: Double ) {
         /* When the user touches a pin the map focuses on their location
          latitude: latidue of the pin
          longitude: longitude of the pin */
-        let region = MKCoordinateRegion.init(center: coord, latitudinalMeters: regionInMeters / 2, longitudinalMeters: regionInMeters / 2)
+        let region = MKCoordinateRegion.init(center: coord, latitudinalMeters: regionMeters, longitudinalMeters: regionMeters)
         mapView.setRegion(region, animated: true)
     }
     
