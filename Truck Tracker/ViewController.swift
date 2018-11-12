@@ -58,7 +58,7 @@ class ViewController: UIViewController, MKMapViewDelegate {
         /* When the user touches a pin the map focuses on their location
          latitude: latidue of the pin
          longitude: longitude of the pin */
-        let region = MKCoordinateRegion.init(center: coord, latitudinalMeters: regionInMeters, longitudinalMeters: regionInMeters)
+        let region = MKCoordinateRegion.init(center: coord, latitudinalMeters: regionInMeters / 2, longitudinalMeters: regionInMeters / 2)
         mapView.setRegion(region, animated: true)
     }
     
